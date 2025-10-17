@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Aniversário, Amor 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    background: #ffe6f0;
+    font-family: 'Poppins', sans-serif;
+    color: #ff1493;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+.message-container {
+    max-width: 600px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255,192,203,0.4);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    white-space: pre-wrap;
+    text-align: center;
+    min-height: 250px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 2;
+}
+.carousel-container {
+    position: relative;
+    max-width: 350px;
+    width: 90%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 2;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-track img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+#heartBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* atrás de tudo */
+    pointer-events: none;
+    overflow: hidden;
+}
+.start-button {
+    margin-top: 50px;
+    padding: 15px 30px;
+    background: #ff1493;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+.start-button:hover {
+    background: #ff66b3;
+}
+</style>
+</head>
+<body>
+
+<svg id="heartBackground" xmlns="http://www.w3.org/2000/svg"></svg>
+
+<div class="title">Feliz Aniversário, Amor 💘</div>
+
+<button class="start-button" id="startButton">Clique aqui para começar 💝</button>
+
+<div class="message-container" id="typing"></div>
+
+<div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+        <img src="https://i.imgur.com/XkgptkX.jpeg" alt="">
+        <img src="https://i.imgur.com/hJkESEv.jpeg" alt="">
+        <img src="https://i.imgur.com/NZEC2eq.jpeg" alt="">
+        <img src="https://i.imgur.com/a7ve477.jpeg" alt="">
+        <img src="https://i.imgur.com/SrhOnnG.jpeg" alt="">
+        <img src="https://i.imgur.com/j5JmqY8.jpeg" alt="">
+        <img src="https://i.imgur.com/hFsLVwh.jpeg" alt="">
+        <img src="https://i.imgur.com/V0ZNWlg.jpeg" alt="">
+        <img src="https://i.imgur.com/Ns1REBH.jpeg" alt="">
+        <img src="https://i.imgur.com/EFpqZl8.jpeg" alt="">
+    </div>
+</div>
+
+<audio id="backgroundMusic" loop>
+    <source src="musicas/OsAnjosCantam.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+<script>
+// ELEMENTOS
+const backgroundMusic = document.getElementById('backgroundMusic');
+const startButton = document.getElementById('startButton');
+const textContainer = document.getElementById('typing');
+
+// TEXTO COMPLETO
+const text = `OIIIIII AMOR FELIZ ANIVERSÁRIO sim vc só vai ver isso no seu aniversário mas já vou começar agr dia: 11/10 as 23:38, bom já vou fala q vc pode cagar e andar ou vc pode chorar MT ou pouquinho, bom eu vou botar tudo oq eu sinto por vc em palavras e tudo oq eu senti deste o começo até o futuro, bom NN sei por onde eu começo, vou cmc pelo início, então quando nois começou a conversar lá no comecinho eu NN pensava q vc ia ser a melhor pessoa q eu já tive na minha vida inteira, no começo eu tava com mt vergonha de te manda mensagem eu só te mandei pq tava com os mlk se NN eu ia fica com vergonha de te manda mensagem, dps daquele dia eu nunca pensei q ia ser o começo de algo tão bom, bom dps de uns dias eu comecei a gostar da sua personalidade, do seu jeitinho, do seu jeito de conversar em si, eu ficava impressionado q nois é tão igual em tudo, quando nois ficou da primeira vez eu me apaixonei de vez por vc pq vc foi MT carinhosa cmg de uma forma q eu nunca vi antes vcc me faz feliz só d ver vc, sei q deve tá sem pé nem cabeça é pq eu tô falando tudo q tá vindo na mente, TA PERA DEIXA EU FOCAR. , TA PERA DEIXA EU FOCAR. Bom amor como hj é seu aniversário eu quero te parabenizar por ser essa mulher incrível q vc é, nunca mude seu jeitinho de pessoa pq é isso q te faz ser MT especial, eu me apaixonei por vc pelo seu jeitinho, seu cabelinho, seu coração, seu caráter, sua personalidade, tudo seu mor me fez me apaixonar por vc, vc é uma mulher do krl uma mulher especial e q merece alguém especial e eu tô tentando ser esse alguém pra vc, quero te pedir desculpas por tudo q eu tenha t feito seja de ruim ou q te deixe insegura, saiba q vc é a mulher dos meus sonhos, eu te amo muito e sempre vou te amar, amor quando vc chegou na minha vida eu pensei q ia ser algo temporário (não por vc n me querer e sim por eu n ser o tipo de homem q vc quer) amor saiba q eu faço de tudo por vc tudo msm, vc me deixou feliz por estar com vc NGM antes tinha conseguido fazer isso, pra mim o amor é literalmente isso vc ser feliz e só de pensar na pessoa vc já fica feliz, ainda tá pequeno o texto eu tô pensando oq bota mais pq eu só sei pensar em vc. amor desculpa NN gastar dinheiro com vc e eu n quero q vc pense q é pq eu n quero ou algo do tipo e sim pq eu n tenho dinheiro pq eu n recebo bolsa família e nem trabalho aí mim tem q ser sustentado pelos pais (coisa mais aviadada o possível isso) mas é a vida, assim q eu começa a trabalhar nois vai ir pra um montão de lugar legal pra nois conhecer, lembrei eu fico todo bobo quando vc me manda foto sua pq eu te acho linda simplesmente linda perfeita maravilhosa gostosa majestosa divina esbelta deusa, amor eu num sei mais oq fala 🥺 eu n sei bota tudo pra fora do meu amor por vc pq é MT grande e vai te cansa lendo, mas é isso amor, vou tenta te manda 00, eu só quero te dar parabéns, te abraçar e ficar com vc pro resto da vida amor eu te amo MT vc é a melhor pessoa desse planeta todos, meus dias com vc são MT melhores, vc é literalmente a razão pra eu sair de casa pra eu levantar com um propósito, vc é o meu viver literalmente. eu te amo amor vc nos meus dias sempre fica melhor
+
+-------- aq é mais um tipo de diário ------
+
+hoje: 15/07, eu demorei um pouquinho pra continuar a cartinha mas hj eu fiquei MT feliz por ter visto ela por ver ela feliz com o aniversário, eu tô MT ansioso pra ver ela linda, eu amo ela de coração de vdd msm ela é a mulher da minha vida, eu amo ela DMS, e eu já sei oq vou dar de presente pra ela e eu tô ansioso pra isso, amor se vc tiver lendo isso saiba q eu te amo DMS e eu quero te ver loogo, e feliz aniversário dnv mor eu te amo DMS 🥺, espero q seja o primeiro de muitos aniversários com vc amor, eu e amo muito`;
+
+function typeWriter(i=0){
+    if(i<text.length){
+        textContainer.innerHTML += text.charAt(i);
+        setTimeout(()=>typeWriter(i+1), 10);
+    }
+}
+
+// CORAÇÕES AJUSTADOS
+const svgNS = "http://www.w3.org/2000/svg";
+const heartBG = document.getElementById('heartBackground');
+for(let h=0; h<30; h++){
+    (function(){
+        const heart = document.createElementNS(svgNS,'path');
+        heart.setAttribute('d','M10,30 A20,20 0 0,1 50,30 Q50,60 10,90 Q-30,60 -30,30 A20,20 0 0,1 10,30 Z');
+        heart.setAttribute('fill','white');
+        heart.setAttribute('opacity',(0.3+Math.random()*0.4));
+        const size = 10 + Math.random()*15;
+        let x = Math.random()*window.innerWidth;
+        let y = window.innerHeight + Math.random()*200;
+        heart.setAttribute('transform',`translate(${x},${y}) scale(${size/50})`);
+        heartBG.appendChild(heart);
+        const duration = 10 + Math.random()*5;
+        let start = null;
+        function animate(timestamp){
+            if(!start) start=timestamp;
+            let progress=(timestamp-start)/1000;
+            let newY=y-(progress*window.innerHeight/duration);
+            if(newY<-50){start=timestamp;x=Math.random()*window.innerWidth; newY=window.innerHeight+50;}
+            heart.setAttribute('transform',`translate(${x},${newY}) scale(${size/50})`);
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    })();
+}
+
+// CARROSSEL SWIPE
+const track=document.getElementById('carouselTrack');
+let startX=0,isDragging=false,index=0;
+track.addEventListener('touchstart', e=>{startX=e.touches[0].clientX; isDragging=true;});
+track.addEventListener('touchmove', e=>{
+    if(!isDragging) return;
+    let moveX=e.touches[0].clientX;
+    let diff=startX-moveX;
+    if(diff>50){showSlide(index+1);isDragging=false;}
+    else if(diff<-50){showSlide(index-1);isDragging=false;}
+});
+track.addEventListener('touchend', ()=>{isDragging=false;});
+function showSlide(n){index=(n+track.children.length)%track.children.length; track.style.transform=`translateX(-${index*100}%)`;}
+
+// INICIAR MÚSICA E TEXTO
+startButton.addEventListener('click', ()=>{
+    typeWriter();
+    backgroundMusic.play();
+    startButton.style.display='none';
+});
+</script>
+
+</body>
+</html>
